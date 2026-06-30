@@ -1,14 +1,27 @@
-link to the [dockerhub repo](https://hub.docker.com/repository/docker/alexey211204/todoapp/general)
+# Instructions
 
-1. Starting app with the docker compose in detached mode (with flag -d)
+## Prerequisites
+
+Make sure you have Docker and Docker Compose installed.
+
+## Run the application
+
+Start the application with Docker Compose in detached mode (with flag -d):
+
 ```bash
-docker compose up -d  
+docker compose up -d
 ```
 
-2. Open [ToDo list webapp](http://localhost:8080/)  in your browser
+MySQL is started as part of the same Docker Compose stack, so no separate MySQL setup is required.
 
-To stop the app and remove all created containers use 
+Once Docker Compose finishes starting the containers, the application will be available at:
+
+[ToDo list webapp](http://localhost:8080/)  in your browser
+
+# Stop the application
+
+To stop the app and remove created containers, run:
 
 ```bash
-docker compose down 
+docker compose down
 ```
